@@ -9,52 +9,57 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #f0f4f8;
         }
         h1 {
-            color: #333;
+            color: #222;
             text-align: center;
             margin-top: 20px;
+            font-size: 2.5rem;
         }
         h2 {
-            color: #444;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 2rem;
         }
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
         a {
-            color: #0077cc;
+            color: #ff5722;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: 40px;
             text-align: center;
-            color: #666;
+            color: #777;
         }
         .carousel {
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .carousel-item img {
-            border-radius: 8px;
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
         }
         .intro {
             margin-bottom: 30px;
             text-align: justify;
         }
         .navbar {
-            background-color: #333;
+            background-color: #ff5722;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .navbar-nav {
             width: 100%;
@@ -63,16 +68,31 @@
         .nav-link {
             color: #fff !important;
             font-weight: bold;
+            font-size: 1.1rem;
         }
         .nav-link:hover {
-            color: #0077cc !important;
+            color: #fff9c4 !important;
         }
         .section {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .nav-link {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -80,6 +100,11 @@
     <!-- 顶部菜单 -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">郑岩</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -116,11 +141,11 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">上一张</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">下一张</span>
         </button>
     </div>
 

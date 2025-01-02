@@ -18,9 +18,13 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #f0f4f8;
-            /* 基本背景图设置 */
-            background-image: url('https://cdn.pixabay.com/photo/2019/11/25/02/48/chinese-wisteria-4650857_960_720.jpg');
-            
+             /* 使用linear-gradient创建半透明效果 */
+             background-image: 
+                linear-gradient(
+                    rgba(240, 244, 248, 0.6), /* 这里的0.6表示60%不透明度 */
+                    rgba(240, 244, 248, 0.6)
+                ),
+                url('https://cdn.pixabay.com/photo/2019/11/25/02/48/chinese-wisteria-4650857_960_720.jpg');
             /* 常用背景属性 */
             background-repeat: no-repeat; /* 不重复平铺 */
             background-position: center;  /* 居中显示 */

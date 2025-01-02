@@ -2,6 +2,7 @@
 
 Zheng Yan (born August 2, 1984) is a Chinese professional Go player from Heilongjiang Province.
 
+![郑岩](http://www.sinaimg.cn/ty/go/2007-11-07/U1163P6T12D3277164F44DT20071107232404.jpg)
 ## Career Highlights
 - Became professional in 1997
 - 2-dan rank

@@ -7,20 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f8f9fa;
         }
         h1 {
             color: #333;
             text-align: center;
+            margin-top: 20px;
         }
         h2 {
             color: #444;
             border-bottom: 2px solid #eee;
             padding-bottom: 5px;
+            margin-top: 30px;
         }
         ul {
             list-style-type: square;
@@ -46,10 +49,56 @@
         }
         .intro {
             margin-bottom: 30px;
+            text-align: justify;
+        }
+        .navbar {
+            background-color: #333;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .navbar-nav {
+            width: 100%;
+            justify-content: space-around;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: #0077cc !important;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
+    <!-- 顶部菜单 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interview">访谈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#life">生活</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <h1>郑岩 - 职业围棋选手</h1>
 
     <!-- 轮播图部分 -->
@@ -75,27 +124,33 @@
         </button>
     </div>
 
-    <div class="intro">
-        <p><strong>郑岩</strong>（1984年8月2日出生），中国黑龙江省人，职业围棋选手。她自幼展现出围棋天赋，1997年定为初段，1999年升为二段。郑岩在围棋领域取得了多项重要成就，是中国女子围棋界的佼佼者。</p>
+    <!-- 简介部分 -->
+    <div id="intro" class="section">
+        <h2>简介</h2>
+        <div class="intro">
+            <p><strong>郑岩</strong>（1984年8月2日出生），中国黑龙江省人，职业围棋选手。她自幼展现出围棋天赋，1997年定为初段，1999年升为二段。郑岩在围棋领域取得了多项重要成就，是中国女子围棋界的佼佼者。</p>
+        </div>
     </div>
 
-    <h2>职业生涯亮点</h2>
-    <ul>
-        <li><strong>1997年</strong>：成为职业选手。</li>
-        <li><strong>1999年</strong>：升为二段棋手。</li>
-        <li><strong>1999年</strong>：获全国少年赛女子组冠军。</li>
-        <li><strong>1999年</strong>：获全国女子个人赛第三名。</li>
-        <li><strong>1998年</strong>：获广东省运会冠军。</li>
-        <li><strong>2007年</strong>：在第5届建桥杯中国女子围棋公开赛决赛中以2比0战胜王祥云，首次夺得全国比赛冠军。</li>
-        <li><strong>2008年</strong>：获首届世界智力运动会女子团体冠军。</li>
-    </ul>
+    <!-- 访谈部分 -->
+    <div id="interview" class="section">
+        <h2>访谈</h2>
+        <p>郑岩在多次访谈中分享了她对围棋的热爱和职业经历。她提到，围棋不仅是一项竞技运动，更是一种生活哲学。她鼓励年轻棋手保持专注和耐心，不断挑战自我。</p>
+    </div>
 
-    <h2>棋风与评价</h2>
-    <p>郑岩的棋风稳健且富有攻击性，善于在复杂局面中寻找机会。围棋界对她的评价较高，认为她在大赛经验和技术水平上都处于国内女子棋手的前列。她的夺冠不仅是个人的成功，也为广东女子围棋的发展注入了新的活力。</p>
+    <!-- 生活部分 -->
+    <div id="life" class="section">
+        <h2>生活</h2>
+        <p>郑岩的丈夫是朱元豪，同样是一位围棋运动员，两人在围棋领域有着共同的追求和兴趣。生活中，郑岩喜欢阅读和旅行，她认为这些爱好有助于开阔视野，提升棋艺。</p>
+    </div>
 
-    <h2>个人生活</h2>
-    <p>郑岩的丈夫是朱元豪，同样是一位围棋运动员，两人在围棋领域有着共同的追求和兴趣。</p>
+    <!-- 关于部分 -->
+    <div id="about" class="section">
+        <h2>关于</h2>
+        <p>郑岩的棋风稳健且富有攻击性，善于在复杂局面中寻找机会。围棋界对她的评价较高，认为她在大赛经验和技术水平上都处于国内女子棋手的前列。她的夺冠不仅是个人的成功，也为广东女子围棋的发展注入了新的活力。</p>
+    </div>
 
+    <!-- 页脚 -->
     <div class="footer">
         更多信息请访问 <a href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B2%A9" target="_blank">郑岩的维基百科页面</a>
     </div>
